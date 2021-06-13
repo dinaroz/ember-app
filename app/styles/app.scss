@@ -29,7 +29,6 @@ input {
     width: 24px;
     height: 24px;
     vertical-align: middle;
-    // background-color: inherit;
     border: 2px solid gray;
     border-radius: 5px;
 }
@@ -130,3 +129,19 @@ td {
     color:red;
     float: left;
 }
+@-moz-document url-prefix() {
+    
+    .checkbox-button__control {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .checkbox-button__input:checked + .checkbox-button__control:after {
+        width: 31px;
+        height: 29px;
+        margin-top: 1px;
+    }
+    .checkbox-button__control {
+        transform: scale(0.70);
+    }
+  }
