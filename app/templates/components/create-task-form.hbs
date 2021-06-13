@@ -1,0 +1,11 @@
+<div class="form-wrapper">
+    <h4> Create a new task </h4>
+    <div>
+        <form {{action 'createNewTask' on="submit" }}>
+            {{input type="text" value=taskName placeholder="your task name" class="create_task_input"
+            required=true}}<br>
+            <br>
+            <button type="submit" class="btn btn-primary">אישור</button>
+        </form>
+    </div>
+</div>
